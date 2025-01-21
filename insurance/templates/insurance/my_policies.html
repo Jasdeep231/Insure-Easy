@@ -1,0 +1,14 @@
+<!-- templates/insurance/my_policies.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My Purchased Policies</h1>
+<div class="policy-list">
+    {% for purchased_policy in purchased_policies %}
+    <div class="policy-item">
+        <h2>{{ purchased_policy.policy.name }}</h2>
+        <p><strong>Purchased on:</strong> {{ purchased_policy.purchase_date }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

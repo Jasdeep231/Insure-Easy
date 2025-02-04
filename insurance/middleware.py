@@ -32,7 +32,6 @@ class RestrictAdminAccessMiddleware:
         # Check if the user is trying to access the admin page
         if request.path.startswith('/admin/'):
             if request.user.is_authenticated:
-                # Replace 'your_admin_username' with the username of the allowed admin
                 if request.user.username != 'admin':
                     return HttpResponseRedirect(reverse('policy_list'))  # Redirect to home page or another page
 

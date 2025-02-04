@@ -10,7 +10,8 @@
         <p>{{ policy.description }}</p>
         <p><strong>Premium:</strong> Rs.{{ policy.premium }} / year</p>
         <p><strong>Duration:</strong> {{ policy.duration_years }} years</p>
-        <a href="{% url 'purchase_policy' policy.id %}">Purchase</a>
+
+        <a href="{% url 'purchase_policy' policy.id%}">Purchase</a>
     </div>
     {% endfor %}
 </div>

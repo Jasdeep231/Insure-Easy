@@ -8,6 +8,7 @@
     <div class="policy-item">
         <h2>{{ purchased_policy.policy.name }}</h2>
         <p><strong>Purchased on:</strong> {{ purchased_policy.purchase_date }}</p>
+        <p><strong>Expires on:</strong> {{ purchased_policy.expired_on }}</p>
     </div>
     {% endfor %}
 </div>

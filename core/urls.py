@@ -24,5 +24,5 @@ urlpatterns = [
     # path('logout/', auth_views.LogoutView.as_view(), name='logout'),  # Logout view
 
     path('', include('insurance.urls')), 
-
+    # path('',include())
 ]

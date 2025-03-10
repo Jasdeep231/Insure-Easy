@@ -26,5 +26,4 @@ urlpatterns = [
     path('my-policies/', views.my_policies, name='my_policies'),
     path('api/', views.API.as_view(), name='api-policies'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-
 ]

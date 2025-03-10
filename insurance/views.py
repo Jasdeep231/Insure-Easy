@@ -48,6 +48,7 @@ def my_policies(request):
     purchased_policies = PurchasedPolicy.objects.filter(user=request.user)
     return render(request, 'insurance/my_policies.html', {'purchased_policies': purchased_policies})
 
+
 # API
 class API(GenericAPIView):
     serializer_class = PolicySerializers
